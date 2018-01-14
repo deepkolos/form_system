@@ -1,0 +1,240 @@
+.leftBar{
+    position:fixed;
+    width:80px;
+    background: black;
+    color:white;
+    height:100%;
+    font-size: 20px;
+    z-index: 4;
+}
+.leftBar > div > div {/*第一层div都是按钮*/
+    width:100%;
+    height:47px;
+    background: lightslategray;
+    margin: 2px 0;
+    text-align: center;
+    line-height: 47px;
+}
+.leftBar #headImg {
+    height: 70px;
+    width:70px;
+    border-radius: 35px;
+    text-align: center;
+	overflow: hidden;
+    margin:5px 5px;
+}
+.leftBar #headImg img{
+    width:70px;
+}
+
+.leftBar #logout{
+    position: absolute;
+    bottom: 0px;
+    height:60px;
+    margin:0px;
+}
+#edit_nav {
+    display: none;
+}
+.leftBar #name{
+    font-size: 15px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.contentContianer{
+    float:left;
+    width:100%;
+    overflow: hidden;
+    position: absolute;
+}
+.contentleft{
+    margin-left:80px;
+    height: 100%;
+    display: block;
+    padding: 5px;
+}
+
+.form_list_item{
+    width:48%;
+    height:180px;
+    border:1px solid black;
+    float: left;
+    margin-top: 10px;
+}
+.form_list_item:nth-child(2n){
+    float:right;
+}
+.form_list_item .status{
+    position: absolute;
+    height:20px;
+    width: 20px;
+    background: black;
+    border-radius: 10px;
+    float:right;
+    position: relative;
+    top:-5px;
+    right:-5px;
+}
+
+.form_list_item .illustration{
+    width:100%;
+    height:135px;
+    background: lightgray;
+
+}
+
+.form_list_item .name{
+    width:100%;
+    height:45px;
+    background: lemonchiffon;
+    text-align: right;
+}
+.form_list_item .name > span{
+    margin: 0 3px;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.form_setting {
+    padding: 10px;
+}
+.form_setting p{
+    display: block;
+    margin:3px;
+    width:100%;
+    overflow: hidden;
+}
+.form_setting input {
+    outline: none;
+    border:none;
+    display: block;
+    width:100%;
+    border-bottom: 1px solid black;
+    margin:3px 0;
+}
+.bt_setting_empty , .bt_setting_del{
+    margin-top:10px;
+    background: lightgray;
+    display: inline-block;
+    text-align: center;
+    padding: 7px 15px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.bt_setting_del{
+    background: darkred;
+    color:wheat;
+}
+
+.buttonBar{
+    margin-top:15px;
+    width:100%;
+    text-align: center;
+}
+.buttonBar div {
+    cursor: pointer;
+    padding: 7px 15px;
+    text-align: center;
+    font-size: 19px;
+    display: inline-block;
+    margin: 0 20px;
+}
+.buttonBar #bt_setting_cancel{
+    background: lightgray;
+}
+.buttonBar #bt_setting_submit{
+    background: lightgreen;
+}
+
+.confirm_window{
+    width:180px;
+    border:1px solid black;
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin-top:-127.5px;
+    margin-left: -61px;
+    padding:10px;
+    display: none;
+    z-index: 20;
+    background: white;
+}
+.confirm_window input{
+    width:100%;
+    border:none;
+    border-bottom:1px solid black;
+    margin-bottom:8px;
+}
+
+.confirm_window .bt_cancel{
+    width:60px;
+    height:30px;
+    background: lightgray;
+    text-align: center;
+    line-height: 30px;
+    float:left;
+    margin-top: 10px;
+}
+.confirm_window .bt_ok{
+    width:60px;
+    height:30px;
+    background: lightblue;
+    text-align: center;
+    line-height: 30px;
+    float:right;
+    margin-top: 10px;
+}
+
+#hitMessageBox{
+    position: fixed;
+    top:12%;
+    width:100%;
+    z-index: 50;
+    text-align: center;
+    display: none;
+}
+
+#hitMessageBox > span{
+    display: inline-block;
+    max-width: 80%;
+    padding:3px 6px;
+    background: lightslategray;
+    border:1px solid black;
+    color: white;
+}
+
+.result_list > li{
+    /*background: lightblue;*/
+    display: block;
+    padding: 5px;
+    margin:5px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(190, 190, 190);
+}
+.result_list > li > span{
+    position: absolute;
+    width:20px;
+    height:20px;
+    text-align: center;
+    line-height: 20px;
+    border:1px solid black;
+}
+.result_list > li > div{
+    margin-left:30px;
+    
+}
+.hit_download_csv{
+    cursor: pointer;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid black;
+    margin-bottom: 10px;
+}
+.about{
+    padding:5px;
+    font-size: 18px;
+}
+.about > div{
+    margin-bottom: 5px;
+}

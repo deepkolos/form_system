@@ -1,0 +1,284 @@
+.contentleft{
+    padding-bottom: 120px;
+    max-width: 600px;
+    min-height: 510px;
+    background: rgb(249 ,249, 244);
+}
+
+.form_block{
+    margin:8px;
+    padding:8px;
+    border:1px dotted olive;
+    /*border-right:1px solid black;*/
+    position: relative;
+}
+
+
+.form_description{
+
+}
+
+.center{
+    padding:10px 15px;
+    text-align: center;
+}
+
+.center .bt_setinput_text{
+    display: inline-block;
+}
+
+.center .bt_setinput_img{
+    display: inline-block;
+}
+
+.input_text_title{
+    margin-bottom: 5px;
+    min-width:100px;
+}
+.option{
+    color: red;
+    margin-right:5px;
+    float: left;
+}
+
+.input_container > div > input{
+    float: left;
+    margin-right: 6px;
+    margin-top:6px;
+}
+
+.control{
+    position: absolute;
+    right: 0;
+    top:0;
+    background: lightgoldenrodyellow;
+    border: 1px solid black;
+    line-height: 8px;
+    font-size: 20px;
+    height: 20px;
+    cursor: pointer;
+    padding: 0 4px;
+}
+
+.bt_ctrl{
+    position: absolute;
+    left:0;
+    top:-1px;
+    width: 100%;
+    border: 1px solid black;
+    background: red;
+    display: none;
+}
+.bt_ctrl > div {
+    width:100%;
+    height: 15px;
+    text-align: center;
+    background: navajowhite;
+    overflow: hidden;
+}
+.bt_ctrl > div:hover {
+    background: lightgreen;
+}
+.bt_ctrl .bt_moveUp{
+    font-size: 18px;
+    line-height: 19px;
+}
+.bt_ctrl .bt_moveDown{
+    font-size: 18px;
+    line-height: 19px;
+    transform: rotate(180deg)
+}
+.bt_ctrl .bt_del_item{
+    font-size: 16px;
+    line-height: 12px;
+}
+.bt_del{
+    position: absolute;
+    right: 15px;
+    margin-top:4px;
+    display: inline-block;
+    text-align: center;
+    height: 10px;
+    width: 10px;
+    line-height: 8px;
+    border: 1px solid black;
+    border-radius:10px; 
+    cursor: pointer;
+    background: white;
+    font-size: 13px;
+}
+.bt_add{
+    position: absolute;
+    right: 35px;
+    margin-top:4px;
+    display: inline-block;
+    text-align: center;
+    height: 10px;
+    width: 10px;
+    line-height: 8px;
+    border: 1px solid black;
+    border-radius:10px; 
+    cursor: pointer;
+    background: white;
+    font-size: 12px;
+}
+
+#releaseUrlShowWindows{
+    /*display: none;*/
+    width:200px;
+    height: 45px;
+    position: fixed;
+    top:50%;
+    left:50%;
+    margin-top:-53px;
+    margin-left:-100px;
+    font-size: 15px;
+    background: white;
+    border:1px solid black;
+    padding :10px;
+    text-align: center;
+}
+#releaseUrlShowWindows > input{
+    width: 100%;
+    display: inline-block;
+    background: lightcyan;
+    font-size: 13px;
+    border: none;
+}
+#releaseUrlShowWindows .bt_close{
+    display: inline-block;
+    padding: 5px 10px;
+    background: lightblue;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.form_description{
+
+}
+.form_description .center > div{
+    /*font-size:22px;*/
+}
+.form_description .center > img{
+    width:100%;
+    display: inline-block;
+}
+.form_singlechoose_input{
+
+}
+.input_container .input_text_title{
+    margin-bottom:0px;
+}
+.input_container > div{
+    border-top: 1px solid rgb(224 ,224, 224);
+    border-left: 1px solid rgb(224 ,224, 224);
+    border-right: 1px solid rgb(224 ,224, 224);
+    background: rgb(255, 255, 255);
+    border-radius: 3px;
+    padding: 3px 6px;
+    margin:0;
+    background: li
+}
+.input_container > div:last-child{
+    border-bottom: 1px solid rgb(224 ,224, 224);
+}
+.form_multichoose_input{
+
+}
+.form_singleline_input{
+
+}
+.form_singleline_input input{
+    display: block;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    border:1px solid rgb(224 ,224, 224);
+    border-radius: 3px;
+    font-size: 17px;
+    line-height: 22px;
+    padding:4px 0px;
+}
+.form_multiline_input{
+
+}
+.form_multiline_input textarea{
+    display: block;
+    width: 100%!important;
+    background: rgb(255, 255, 255);
+    border:1px solid rgb(224 ,224, 224);
+    border-radius: 2px;
+    font-size: 17px;
+    line-height: 22px;
+    padding:4px 0px;
+}
+
+.bottomBar{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    height: 60px;
+    width: 60px;
+    display: inline-block;
+    background: lightslategray;
+    z-index: 50;
+    /*overflow: hidden;*/
+    border-radius: 30px;
+    box-shadow:3px 3px 3px rgba(0,0,0,.1);
+}
+.bottomBar #add_item{
+    width:60px;
+    height: 60px;
+    font-size: 45px;
+    text-align: center;
+    line-height: 55px;
+    display: inline-block;
+    background: lightslategray;
+    border-radius: 30px;
+    color: white;
+    z-index: 100;
+    position: absolute;
+    transition: all .4s ease 0s;
+    -webkit-transition: all .4s ease 0s;
+    -o-transition: all .4s ease 0s;
+    -moz-transition: all .4s ease 0s;
+}
+.bottomBar #add_item > div{
+    width:60px;
+    height: 60px;
+    font-size: 45px;
+    text-align: center;
+    line-height: 55px;
+    border-radius: 30px;
+    color: white;
+    z-index: 100;
+    position: absolute;
+    transition: all .4s ease 0s;
+    -webkit-transition: all .4s ease 0s;
+    -o-transition: all .4s ease 0s;
+    -moz-transition: all .4s ease 0s;
+}
+.bottomBar > ul{
+    /*display: none;*/
+}
+.bottomBar > ul > li{
+    width:60px;
+    height: 60px;
+    background: lightslategray;
+    float: left;
+    display: block;
+    text-align: center;
+    color: white;
+    line-height: 60px;
+    position: absolute;
+    top:0px;
+    transition: all .35s ease 0.1s;
+    -webkit-transition: all .35s ease 0.1s;
+    -o-transition: all .35s ease 0.1s;
+    -moz-transition: all .35s ease 0.1s;
+    opacity: 0;
+}
+/*使用js定位li位置*/
+.bottomBar > ul > li:first-child{
+    border-top-left-radius: 30px!important;
+    border-top-right-radius: 30px!important;
+}
